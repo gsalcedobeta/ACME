@@ -1,0 +1,46 @@
+{
+    "schedules": [
+        {
+            "name": "RENE",
+            "schedule": [
+                {
+                    "monday": "10:00-12:00",
+                    "tuesday": "10:00-12:00",
+                    "wednesday": "",
+                    "thursday": "01:00-03:00",
+                    "friday": "",
+                    "saturday": "14:00-18:00",
+                    "sunday": "20:00-21:00"
+                }
+            ]
+        },
+        {
+            "name": "ASTRID",
+            "schedule": [
+                {
+                    "monday": "10:00-12:00",
+                    "tuesday": "",
+                    "wednesday": "",
+                    "thursday": "12:00-14:00",
+                    "friday": "",
+                    "saturday": "",
+                    "sunday": "20:00-21:00"
+                }
+            ]
+        },
+        {
+            "name": "ANDRES",
+            "schedule": [
+                {
+                    "monday": "10:00-12:00",
+                    "tuesday": "",
+                    "wednesday": "",
+                    "thursday": "12:00-14:00",
+                    "friday": "",
+                    "saturday": "",
+                    "sunday": "20:00-21:00"
+                }
+            ]
+        }
+    ]
+}

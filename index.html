@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Horarios</h2>
+    <table id="Scheludes">
+        <tr>
+            <th>Nombre</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+        </tr>
+    </table>
+    <script>
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+                var j = 0;
+                for (var i = 0; i<data.schedules.length; i++){
+                
+                let Name = data.schedules[i].name;
+                let Schelude = data.schedules[i].schedule;
+                let Days = data.schedules[i].schedule[0];
+                
+                
+
+                console.log(Days);
+                document.querySelector("#Scheludes").innerHTML += `
+                    <tr>
+                        <td>${Name}</td>
+                        <td>${Days.monday}</td>
+                        <td>${Days.tuesday}</td>
+                        <td>${Days.wednesday}</td>
+                        <td>${Days.thursday}</td>
+                        <td>${Days.friday}</td>
+                        <td>${Days.saturday}</td>
+                        <td>${Days.sunday}</td>
+                    </tr>`;
+                }
+            })
+    </script>
+</body>
+</html>

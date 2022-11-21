@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+#Scheludes {
+    display: table;
+    margin: auto;
+    font-family: sans-serif;
+    border: 1px solid #b1b1b1;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px #cacaca;
+}
+
+
+#Scheludes th {
+    padding: 10px;
+    border: 1px solid #b1b1b1;
+    border-collapse: collapse;
+    background: #dcdcdc;
+}
+
+#Scheludes td {
+    padding: 10px;
+    border: 1px solid #b1b1b1;
+    border-collapse: collapse;
+}
